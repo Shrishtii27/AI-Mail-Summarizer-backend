@@ -8,9 +8,8 @@ const nodemailer = require('nodemailer');
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// Corrected CORS configuration to allow requests from your frontend's Vercel domain.
 app.use(cors({
-  origin: 'https://ai-mail-summarizer-frontend.vercel.app'
+  origin: 'https://ai-mail-summarizer.vercel.app'
 }));
 
 app.use(express.json());
